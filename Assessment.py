@@ -1,4 +1,3 @@
-import bs4
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
 import time
@@ -17,7 +16,7 @@ page_soup = soup(page_html, 'html.parser')
 
 # grabbing all containers with href
 containers = page_soup.findAll(href=True)
-print("mumber of times href appears: ", len(containers))
+print("number of times href appears: ", len(containers))
 
 #grabbing all containers with class = storylink
 storylink = page_soup.findAll('a', {'class':"storylink"})
