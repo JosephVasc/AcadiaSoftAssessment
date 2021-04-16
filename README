@@ -1,3 +1,38 @@
 author: Joseph Vasconcelos
 Date: 4/16/2021
+Version: 1.0
 Assessment:
+1. Create Github repo and make it public.
+
+2. Using Python, create a script that will do the following:
+
+    a. Parse the front page of "https://news.ycombinator.com" (Hacker news).
+
+    b. Count the number of times the string "href" shows up in the page.
+
+    c. In a List, append all the URLs with the HTML class "storylink"
+
+        ex: in the following snippet, we want "https://www.statnews.com/2021/04/14/psilocybin-depression-psychedelics-escitalopram/" to be appended to the list.
+
+    ```
+
+      <td align="right" valign="top" class="title"><span class="rank">1.</span></td>      <td valign="top" class="votelinks"><center><a id='up_26833714' href='vote?id=26833714&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class="title"><a href="https://www.statnews.com/2021/04/14/psilocybin-depression-psychedelics-escitalopram/" class="storylink">First of its kind study pits psilocybin against a common antidepressant</a><span class="sitebit comhead"> (<a href="from?site=statnews.com"><span class="sitestr">statnews.com</span></a>)</span></td></tr><tr><td colspan="2"></td><td class="subtext">
+
+        <span class="score" id="score_26833714">44 points</span> by <a href="user?id=gmays" class="hnuser">gmays</a> <span class="age"><a href="item?id=26833714">44 minutes ago</a></span> <span id="unv_26833714"></span> | <a href="hide?id=26833714&amp;goto=news">hide</a> | <a href="item?id=26833714">14&nbsp;comments</a>              </td></tr>
+
+    ```
+
+    d. Print the list of URLS,
+
+    e. Measure the time the script (functions) took to run.
+
+3. Document the script properly.
+
+4. Send us the Github repo link for review.
+
+In this assessment I first created my github repo, decided id use beautifulsoup to parse the html
+I found all cases in which href appears, stored into containers and printed the # of items in the container (number of times href appears)
+I then grabbed all instances where the html class was equal to a storylink
+Used a forloop to append the urls all into one list "url_list" and then printed the list
+I measured the time it took to run this by first taking the time at the top of the script and finding the difference between
+the time the script had completed execution

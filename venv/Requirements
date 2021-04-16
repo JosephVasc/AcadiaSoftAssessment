@@ -1,1 +1,4 @@
 Requirements:
+BeautifulSoup4
+urllib
+time
