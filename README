@@ -29,12 +29,15 @@ Assessment:
 3. Document the script properly.
 
 4. Send us the Github repo link for review.
+
 comments:
-I didn't feel needed a class to do this I chose to do it all in one script
+I didn't feel I needed a class to do this, I chose to do it all through one script. I could use individual functions
+for each task but beautifulsoup allowed me to do it very streamlined.
 
 In this assessment I first created my github repo, decided id use beautifulsoup to parse the html
-I found all cases in which href appears, stored into containers and printed the # of items in the container (number of times href appears)
-I then grabbed all instances where the html class was equal to a storylink
-Used a forloop to append the urls all into one list "url_list" and then printed the list
-I measured the time it took to run this by first taking the time at the top of the script and finding the difference between
-the time the script had completed execution
+I found all cases in which href appears, stored into containers and printed the # of items in the container
+(number of times href appears), I then grabbed all instances where the html class was equal to a storylink.
+Used a for loop to append the urls all into one list "url_list" and then printed the list
+I measured the time it took to run this by first taking the time at the top of the script and
+finding the difference between the start time and the end time of the script
+
