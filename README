@@ -29,6 +29,8 @@ Assessment:
 3. Document the script properly.
 
 4. Send us the Github repo link for review.
+comments:
+I didn't feel needed a class to do this I chose to do it all in one script
 
 In this assessment I first created my github repo, decided id use beautifulsoup to parse the html
 I found all cases in which href appears, stored into containers and printed the # of items in the container (number of times href appears)
